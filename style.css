@@ -21,4 +21,8 @@ justify-content: center;
     width: 300px;
 }
 
-#iPinfo
+#iPinfo{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
