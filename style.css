@@ -3,7 +3,7 @@
 .attribution a { color: hsl(228, 45%, 44%); }
 
 #map {
-    display: flex;
+    display: grid;
     height: 700px;
     width: 100%;
 }
@@ -22,7 +22,15 @@ justify-content: center;
 }
 
 #iPinfo{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
     justify-content: center;
     gap: 50px;
+    color: blue;
+    border-style: solid;
+    
+}
+
+#iPinfo p {
+    border-right: 1px solid #ccc;
 }
