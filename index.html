@@ -8,12 +8,12 @@
   
   <title>Frontend Mentor | IP Address Tracker</title>
   <link rel="stylesheet" href="style.css">
-  <script src="java.js" defer></script>
+  <script src="java.js" type= "module" defer></script>
+  <script src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_MH_FuNqanupJHTj_hs8o6J0f-a4xhKk" defer></script>
 </head>
 
 
 <body>
-
  <h1 id="title">IP Address Tracker</h1>
 
 <section class = "iPsearch">
@@ -39,7 +39,13 @@
 
 
 <section id = "maps">
-
+<gmp-map
+      center="38.7946,-106.5348"
+      zoom="4"
+      map-id="DEMO_MAP_ID"
+      style="height: 400px"
+    >
+    </gmp-map>
 </section>
 
   <footer class ="footer"> 
