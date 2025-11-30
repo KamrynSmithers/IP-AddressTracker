@@ -41,3 +41,27 @@ if(search) {
 })
 
 
+async function mapIp (ipOrDomain) {
+try {
+    const response = await fetch (
+        `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&ipAddress=${ipOrDomain}&domain=${ipOrDomain}`
+    )
+    const data = await response.json ()
+    const {ip, isp, location } = data
+    const {city, region, country, timezone, lat, lng} = location
+
+    document.getElementById("address").textContent = `IP Address: ${ip}`
+    document.getElementById("location").textContent = `Location: ${city}, ${region}, ${country}`
+    document.getElementById("timezone").textContent =  `Timezone: ${timezone}`
+    // document.getElementById("utc").textContent = `UTC: ${getUTCOffset(timezone)}`
+    document.getElementById("isp").textContent = `ISP: ${isp}`
+
+
+    map.setCenter({ lat, lng });
+    map.setZoom(12);
+    marker.setPosition({ lat, lng });
+  } catch (error) {
+    console.error("Error fetching IP info:", error);
+    alert("Could not find that IP address or domain.");
+}
+}
