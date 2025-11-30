@@ -16,8 +16,8 @@
 <body>
  <h1 id="title">IP Address Tracker</h1>
 
-<section class = "iPsearch">
-<form action = "/search" method = "get">
+<section id = "iPsearch">
+<form id="searchForm" action = "/search" method = "get">
 <input id="searchBox" name= "search" type ="text" placeholder="Search for any IP address or domain">
 <button id="goButton" type="submit">Go!</button>
 
@@ -29,9 +29,9 @@
 </section>
 
 
-<section class = "iPinfo">
+<section id = "iPinfo">
   <p id = "address"> IP Address </p>
-  <p id ="loction"> Location </p>
+  <p id ="location"> Location </p>
   <p id = "timezone"> Timezone </p>
     <p id ="utc"> UTC </p> <!-- add offset value dynamically using the API -->
   <p id="isp"> ISP </p>
