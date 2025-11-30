@@ -8,8 +8,8 @@
   
   <title>Frontend Mentor | IP Address Tracker</title>
   <link rel="stylesheet" href="style.css">
-  <script src="java.js" type= "module" defer></script>
-  <script src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_MH_FuNqanupJHTj_hs8o6J0f-a4xhKk" defer></script>
+  <script src="java.js" defer></script>
+  <script src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_MH_FuNqanupJHTj_hs8o6J0f-a4xhKk&callback=initMap" defer></script>
 </head>
 
 
@@ -25,7 +25,7 @@
 </section>
 
 <section id = "showMyIp">
-<p id = "currentIp">Current Devices IP Address:</p>
+<p id = "show"></p></p>
 </section>
 
 
@@ -38,15 +38,11 @@
 </section>
 
 
-<section id = "maps">
-<gmp-map
-      center="38.7946,-106.5348"
-      zoom="4"
-      map-id="6875d1010bc8c5041e443859"
-      style="height: 400px"
-    >
-    </gmp-map>
+<section id = "map-section">
+<div id="map">
+</div>
 </section>
+
 
   <footer class ="footer"> 
   <div class="attribution">
