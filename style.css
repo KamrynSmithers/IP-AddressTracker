@@ -11,6 +11,13 @@ padding: 10px;
     padding: 7px;
 
 }
+#searchBox:hover{
+    background-color: rgb(182, 236, 248);
+    color: #000000;
+    font-weight: bold;
+    transform: scale(1.2);
+
+}
 
 #map {
     display: grid;
@@ -30,6 +37,11 @@ padding: 10px;
     text-align: center;
 
 
+}
+
+#show:hover {
+    transform: scale(2.0);
+    background-color: rgb(182, 236, 248);
 }
 #searchForm {
     display: flex;
@@ -68,6 +80,8 @@ align-items: center;
     border-radius: 10px;
     font-size: 20px;
     border-right: 2px solid #000000;
+        transform: scale(1.3);
+
 
     
 }
@@ -155,3 +169,24 @@ text-align: center;
 
 #h2New {
 text-align: center;}
+
+.cGroup {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+.column {
+background-color: white;
+padding: 25px;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+
+}
+#font {
+    font-size: 30px;
+}
+#gif {
+padding: 50px;
+height: 700px;}
