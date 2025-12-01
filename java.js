@@ -51,7 +51,7 @@ try {
     document.getElementById("address").textContent = `IP Address: ${ip} `
     document.getElementById("location").textContent = `Location: ${city}, ${region}, ${country} `
     document.getElementById("timezone").textContent =  `Timezone: ${timezone} `
-    // document.getElementById("utc").textContent = `UTC: ${getUTCOffset(timezone)}`
+     document.getElementById("utc").textContent = `UTC: ${timezone}`
     document.getElementById("isp").textContent = `ISP: ${isp}`
 
 

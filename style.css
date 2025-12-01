@@ -1,16 +1,14 @@
-.attribution { font-size: 11px; text-align: center; }
-
-.attribution a { color: hsl(228, 45%, 44%); }
-
 
 body {
-    background-color: rgb(230, 85, 95);
-    color: white
+font-family: monopoly;
+border-style: solid;
+padding: 10px;
 }
 
 #title {
     border-style: solid;
      border-radius: 10px;
+    padding: 7px;
 
 }
 
@@ -24,15 +22,25 @@ body {
 #show {
     border-style: solid;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
+    width: 100px;
+    height: 50px;
+    text-align: center;
 
 
+
+}
+#searchForm {
+    display: flex;
+    align-items: center;
+    gap: 1px;
 }
 
 #title {
     text-align: center;
+    font-size: 80px;
 }
 
 #iPsearch {
@@ -44,18 +52,25 @@ align-items: center;
 }
 
 #searchBox {
-    width: 300px;
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    
 }
 
 #iPinfo{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 50px;
     color: black;
     border-style: solid;
     padding: 20px;
-        border-radius: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    border-right: 2px solid #000000;
+
+
 
     
     
@@ -71,4 +86,66 @@ align-items: center;
 
 #goPic {
     height: 40px;
+}
+
+#mman {
+    height: 300px;
+}
+
+#hero {
+  background-image: url("images/593007ee3919fe0ee3614da9.png");
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  border-radius: 10px;
+  border: 3px solid #ccc;
+}
+
+#monopolyHeader {
+  border: 3px solid black;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  background: white;
+  overflow: hidden;
+}
+
+#redBar {
+  background-color: #d10606; /* Monopoly red */
+  height: 40px;
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    #map {
+        height: 400px;
+    }
+}
+
+@media (min-width: 768px) {
+  #iPinfo {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}
+#iPinfo,
+#hero,
+#monopolyHeader {
+  border: none !important;
+}
+
+#searchShow {
+    display: flex;
+    justify-content: center;  /* center everything horizontally */
+    align-items: center;      /* vertical alignment */
+    gap: 20px;                /* space between IP and search bar */
+    margin: 20px 0;
 }
