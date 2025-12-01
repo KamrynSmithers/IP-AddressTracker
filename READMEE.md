@@ -8,6 +8,11 @@
 Two separate APIs together to create an IP Address Tracking app. Enter an IP address and instantly recieve data!
 
 ## Reflection 
+Thank you so much for reviewing my code for the “Frontend Mentor | IP Address Tracker” challenge. As the first complete project of HTML5, CSS3, and Javascript that I’ve successfully finished, I feel confident in the future projects I will create. 
+The project included starter files with an HTML document, images, and a readme.md file. To get the HTML document going, I accurately labeled the contents on the page with their correct tag and placed id’s in the elements to be able to select them in CSS and manipulate them through the DOM. 
+I decided to take an alternative approach to the design by implementing the Monopoly game theme. After researching the official Monopoly font family, finding png pictures of the game host, and locating the rgb color values of the game, they were placed into the CSS document for accurate styling. This decision spoke to my curiosity and made the project much more engaging beyond the included design files.
+As my first project, there were some challenges in determining what data from the API to pull, and how to insert the current devices IP onto the page upon page load. Solutions were found after browsing the Stack Overflow website, and some trying and error code practices.
+Undoubtedly, there is much room for potential improvements to my “Frontend Mentor | IP Address Tracker” challenge code. Firstly, white space. 
 
 ## Table of Contents
 * [Technologies Used](#technologiesused)
