@@ -2,19 +2,33 @@
 
 .attribution a { color: hsl(228, 45%, 44%); }
 
+
+body {
+    background-color: rgb(230, 85, 95);
+    color: white
+}
+
 #title {
     border-style: solid;
+     border-radius: 10px;
+
 }
 
 #map {
     display: grid;
     height: 700px;
     width: 100%;
+    border-radius: 10px;
 }
 
 #show {
     border-style: solid;
     padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+
+
 }
 
 #title {
@@ -25,6 +39,8 @@
 display: flex;
 justify-content: center;
 align-items: center;
+    border-radius: 10px;
+
 }
 
 #searchBox {
@@ -39,6 +55,8 @@ align-items: center;
     color: black;
     border-style: solid;
     padding: 20px;
+        border-radius: 10px;
+
     
     
 }
