@@ -147,3 +147,11 @@ align-items: center;
 #monopolyHeader {
   border: none !important;
 }
+
+#newPageIP {
+font-size: 50px;
+text-align: center;
+}
+
+#h2New {
+text-align: center;}
