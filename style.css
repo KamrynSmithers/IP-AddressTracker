@@ -68,7 +68,11 @@ align-items: center;
     border-radius: 5px;
     
 }
-
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #iPinfo{
     display: flex;
     flex-direction: column;
@@ -93,8 +97,7 @@ align-items: center;
 
 #iPinfo p {
     border-right: 1px solid #ccc;
-    margin: 15px 0;
-    padding-left: 10px;
+
 }
 
 #goPic {
